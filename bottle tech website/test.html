@@ -15,8 +15,21 @@
                 background-color:#09111c ;
                 z-index: 1;
             }
+            .logo_a{
+                height: 60;
+                width: 120;
+                margin-left: 80 ;
+                margin-top: 7;
+            }
+            .header_btn_bar{
+                width: 900px;
+                height: 80px;
+                border: 1px white solid;
+                margin-left: 450;
+                margin-top: -70;
+            }
             .contain{
-                height: 3000px;
+                height: 2100px;
                 width: 100%;
                 position: static;
                 background-color:#00ada9;
@@ -44,6 +57,11 @@
                 height: 1500px;
                 background-color: #2e3133;
                 clip-path: polygon(0 0, 100% 0, 100% 55%, 0 60%);
+                text-align: center;
+            }
+            .logo_top{
+                width: 800;
+                height: 800;
             }
             .bg_bottom{
                 width: 100%;
@@ -51,6 +69,20 @@
                 background-color: #2e3133;
                 clip-path: polygon(0 55%, 100% 40%, 100% 100%, 0 100%);
                 position: absolute;bottom: 0;
+            }
+            .logo_group{
+                width: 1100;
+                height: 800;
+                border: 1px white solid;
+                margin: auto;
+                margin-top: -650;
+                text-align: center;
+            }
+            .logo_group2{
+                width: 200;
+                height: 200;
+                margin: auto;
+                margin-left: 30;
             }
             .footer{
                 bottom: 0;
@@ -62,12 +94,29 @@
         </style>
     </head>
     <body class="bg">
-        <div class="header"></div>
+        <div class="header">
+            <a href=""><img class="logo_a" src="./img/nav-logo_crop.png"></a>
+            <div class="header_btn_bar"></div>
+        </div>
         <div class="btt_botton"></div>
         <div class="freeback"></div>
         <div class="contain">
-            <div class="bg_top"></div>
-            <div class="bg_bottom"></div>
+            <div class="bg_top">
+                <img class="logo_top" src="./img/BTL_LogoOnBlack.jpg">
+            </div>
+            <div class="logo_group">
+                <div>
+                    <img class="logo_group2" src="./img/whiteservice-1.png">
+                    <img class="logo_group2" src="./img/whiteservice-3.png">
+                    <img class="logo_group2" src="./img/whiteservice-5.png">
+                    <img class="logo_group2" src="./img/whiteservice-6.png">
+                    <br>
+                    <img class="logo_group2" src="./img/whiteservice-2.png">
+                    <img class="logo_group2" src="./img/whiteservice-4.png">
+                </div>
+            </div>
+            <div class="bg_bottom">
+            </div>
             <div class="footer"></div>
         </div>
     </body>
