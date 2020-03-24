@@ -1,0 +1,25 @@
+.bg_bottom{
+    width: 100%;
+    height: 900px;
+    background-color: #2e3133;
+    clip-path: polygon(0 55%, 100% 40%, 100% 100%, 0 100%);
+    position: absolute;bottom: 0;
+}
+.bottom_ad_us{
+    width: 720;
+    height: 300;
+    /* border: 1px white solid; */
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 500;
+    line-height: 2;
+}
+.bottom_ad_tel{
+    width: 350;
+    height: 300;
+    /* border: 1px white solid; */
+    position: absolute;
+    margin-left: 1000;
+    margin-top: 500;
+    line-height: 2;
+}

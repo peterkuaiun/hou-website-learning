@@ -1,0 +1,55 @@
+.logo_group{
+    width: 1100;
+    height: 800;
+    /* border: 1px white solid; */
+    margin: auto;
+    margin-top: -650;
+    text-align: center;
+}
+.green{
+    width: 210;
+    height: 210;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 100px;
+    z-index: 1;
+    /* border: 1px green solid; */
+}
+.blue{
+    width: 220;
+    height: 50px;
+    /* border: 1px blue solid; */
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+.blue_a{
+    text-decoration: none;
+    color: white;
+}
+.blue_a:hover{
+    color: rgb(255, 179, 37);
+}
+.img_size{
+    background-size: cover;
+    width: 210;
+    height: 210;
+}
+.img1{
+    background-image: url(./img/whiteservice-1.png);
+}
+.img3{
+    background-image: url(./img/whiteservice-3.png);
+}
+.img5{
+    background-image: url(./img/whiteservice-5.png);
+}
+.img6{
+    background-image: url(./img/whiteservice-6.png);
+}
+.img2{
+    background-image: url(./img/whiteservice-2.png);
+}
+.img4{
+    background-image: url(./img/whiteservice-4.png);
+}
