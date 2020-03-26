@@ -3,6 +3,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="logo_group.css">
         <link rel="stylesheet" type="text/css" href="bg_bottom.css">
+        <link rel="stylesheet" type="text/css" href="header.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+
 
         <style>
             .bg{
@@ -11,40 +14,6 @@
                 margin-right: 0;
                 margin-bottom: 0;
                 position: relative;
-            }
-            .header{
-                position:fixed;
-                width: 100%;
-                height: 80px;
-                background-color:#09111c ;
-                z-index: 1;
-            }
-            .logo_a{
-                height: 60;
-                width: 120;
-                margin-left: 120 ;
-                margin-top: 7;
-            }
-            .header_btn_bar{
-                width: 800px;
-                height: 80px;
-                border: 1px white solid;
-                margin-left: 590;
-                margin-top: -70;
-            }
-            .header_btn{
-                width: 80;
-                height: 60;
-                border: 1px white solid;
-                margin-left: 10px;
-                display: inline-block;
-                margin-top: 8;
-            }
-            .h_btn_a{
-                text-decoration: none;
-                color: white;
-                padding: 22;
-                line-height: 3.5;
             }
             .contain{
                 height: 2100px;
@@ -56,12 +25,21 @@
                 position: fixed;
                 top: 75%;
                 right: 0;
-                width: 100px;
-                height: 100px;
-                background-color:#09111c ;
+                width: 40px;
+                height: 35px;
+                background-color:#5d5e62 ;
                 z-index: 1;
+                text-align: center;
+                line-height: 1.5;
+                font-size: 2em;
+                color: white;
             }
-            .freeback{
+            .btt_botton_a{
+                padding:  8 15;
+                text-decoration: none;
+                color: white;
+            }
+            /* .freeback{
                 position: fixed;
                 top: 80%;
                 right: 100px;
@@ -69,7 +47,7 @@
                 height: 100px;
                 background-color:#09111c ;
                 z-index: 1;
-            }
+            } */
             .bg_top{
                 width: 100%;
                 height: 1500px;
@@ -81,13 +59,6 @@
                 width: 800;
                 height: 800;
             }
-            .footer{
-                bottom: 0;
-                width: 100%;
-                height: 50px;
-                background-color:#09111c ;
-                position: absolute;bottom: 0;
-            }
         </style>
     </head>
     <body class="bg">
@@ -95,16 +66,37 @@
             <a href=""><img class="logo_a" src="./img/nav-logo_crop.png"></a>
             <div class="header_btn_bar">
                 <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
-                <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
-                <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
-                <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
-                <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
-                <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
-                <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
-                <div class="header_btn"><a href="" class="h_btn_a">首頁</a></div>
+                <div class="header_btn"><a href="" class="h_btn_a">關於我們</a></div>
+                <div class="header_btn"><a href="" class="h_btn_a">軟硬件銷售</a></div>
+                <div class="header_btn"><a href="" class="h_btn_a">I.T.SUPPORT</a></div>
+                <div class="dropdown">
+                    <div class="header_btn2">主要業務</div>
+                    <div class="dropdown-content">
+                        <a href="">360VR全景技術、拍攝及虛擬導航</a><hr>
+                        <a href="">I.T. SUPPORT SOLUTUON</a><hr>
+                        <a href="">電腦軟硬件鎖售與供應</a><hr>
+                        <a href="">網站網頁設計及製作</a><hr>
+                        <a href="">平面設計/動畫製作</a><hr>
+                        <a href="">系統開發</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="header_btn2">其他業務</div>
+                    <div class="dropdown-content">
+                        <a href="">雲端網頁寄存服務</a><hr>
+                        <a href="">數據探集及處理</a><hr>
+                        <a href="">KIOSK 資訊服務站</a><hr>
+                        <a href="">自助相片打印解決方案 </a><hr>
+                        <a href="">3D打印機</a><hr>
+                        <a href="">互動裝置</a>
+                    </div>
+                </div>
+                <div class="header_btn"><a href="" class="h_btn_a">工作機會</a></div>
+                <div class="header_btn"><a href="" class="h_btn_a">
+                    <span class="color">聯絡我們</span></a></div>
             </div>
         </div>
-        <div class="btt_botton"></div>
+        <div class="btt_botton"><a href="" class="btt_botton_a"><abbr title="Back To Top">^</abbr></a></div>
         <div class="freeback"></div>
         <div class="contain">
             <div class="bg_top">
@@ -154,11 +146,11 @@
                 <div class="bottom_ad_us">
                     <h1 style="color: #00ada9; font-family:Microsoft JhengHei;">關於我們</h1>
                         <h4 style="color: white; font-family:Microsoft JhengHei;">
-瓶科技有限公司(Bottle Technology Limited)於2015年正式成立，是一間澳門本土出品的創業公司，
-主要業務是設計及研發互動產品。核心成員都是有科研經驗的大學畢業生，擁有專業知識及多年項
-目開發的實戰能力，並一直專注探索高新科技領域。 瓶科技通過將軟件、硬件、創新三方面結合，
-創造出一個個出色穩定的產品。我們擁有無限的創造力和豐富的實戰經驗，能為中小微企提供精準
-可靠的解決方案。
+                        瓶科技有限公司(Bottle Technology Limited)於2015年正式成立，是一間澳門本土出品的創業公司，
+                        主要業務是設計及研發互動產品。核心成員都是有科研經驗的大學畢業生，擁有專業知識及多年項
+                        目開發的實戰能力，並一直專注探索高新科技領域。 瓶科技通過將軟件、硬件、創新三方面結合，
+                        創造出一個個出色穩定的產品。我們擁有無限的創造力和豐富的實戰經驗，能為中小微企提供精準
+                        可靠的解決方案。
                         </h4>
                 </div>
                 <div class="bottom_ad_tel">
@@ -169,9 +161,19 @@
                             電話: <a href="tel:68284050" style="text-decoration:none; color: #00ada9;">(+853) 6566 5508</a>
                         </h4>
                 </div>
-                
             </div>
             <div class="footer">
+                <div class="f_btn_g">
+                    <div class="f_btn"><a href="" class="f_btn_a">首頁</a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a">關於我們</a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a">軟硬件銷售</a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a">數據採集處理</a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a">3D打印</a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a">360互動</a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a">聯絡我們</a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a"><strong>F</strong></a></div>
+                    <div class="f_btn"><a href="" class="f_btn_a"><strong>In</strong></a></div>
+                </div>
             </div>
         </div>
     </body>

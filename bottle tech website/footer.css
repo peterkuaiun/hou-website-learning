@@ -1,0 +1,33 @@
+.footer{
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color:#09111c ;
+    position: absolute;bottom: 0;
+}
+.f_btn_g{
+    width: 700px;
+    height: 50px;
+    /* border: 1px solid white; */
+    margin-left: 800px;
+    text-align: center;
+}
+.f_btn{
+    display:inline-block;
+    /* width: 50px; */
+    height: 50px;
+    /* border: 1px white solid; */
+    margin-left: 10px;
+    color: white;
+    line-height: 3;
+    font-family:Microsoft JhengHei;
+    color: rgba(255, 255, 255, 0.68);
+}
+.f_btn_a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.68);
+}
+.f_btn_a:hover{
+    color: white;
+    transition: 0.5s;
+}
