@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Number guessing game</title>
+    <style>
+        .board{
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <h1>Number guessing game</h1>
+        <h4>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</h4>
+        <label for="guessField">Enter a guess: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="button" value="Submit guess" id="guessSubmit" class="guessSubmit" onclick="show()">
+        <p class="pre_guesses"></p>
+        <p class="time_last"></p>
+        <p class="ans"></p>
+        <p class="lowOrhigh"></p>
+        <input type="button" value="start new game" id="sng" class="sng" style="display: none;" onclick="sng()">
+
+    </div>
+
+    <script>
+        var tmp=Math.floor(Math.random()*100+1);
+        alert(tmp);
+        var ans=document.querySelector('.ans');
+        var lowOrhigh = document.querySelector('.lowOrhigh');
+        var pre_guesses= document.querySelector('.pre_guesses');
+        var time_last = document.querySelector('.time_last');
+        var time=1;
+        function show(){
+            var user_guess=Number(guessField.value);
+            if(time==1){
+                pre_guesses.textContent=("pre_guesses:");
+            }
+            pre_guesses.textContent += user_guess +" ";
+            console.log(user_guess);
+            if(tmp==user_guess){
+                ans.textContent="中了";
+                ans.style.backgroundColor="green";
+                lowOrhigh.textContent=" ";
+                block();
+            }
+            else if(time==10){
+                ans.textContent="夠了";
+                ans.style.backgroundColor="red";
+                lowOrhigh.textContent=" ";
+                block();
+            }
+            else{
+                if(user_guess>tmp){
+                lowOrhigh.textContent=user_guess+" is To high";
+                ans.textContent="錯!";
+                ans.style.backgroundColor="red";
+                }
+                else{
+                lowOrhigh.textContent=user_guess+" is To low"; 
+                ans.textContent="錯!";
+                ans.style.backgroundColor="red";
+                }
+            }
+            time++;
+            time_last.textContent=("目前第"+(time-1)+"次嘗試");
+            guessField.value=" "; //清空格內容
+
+        }
+        function block(){
+            guessField.disabled=true;
+            document.getElementById("guessSubmit").innerHTML.disabled;
+            guessSubmit.disabled=true;
+            document.getElementById("sng").style.display="block";
+            //resetButton = document.createElement('button');
+            //resetButton.textContent = 'Start new game';
+            //lowOrhigh.appendChild(resetButton); //出現一舊野
+        }
+        function sng(){
+            guessField.disabled=false;
+            document.getElementById("guessSubmit").innerHTML.disabled;
+            guessSubmit.disabled=false;
+            document.getElementById("sng").style.display="none";
+            pre_guesses.textContent=" ";
+            ans.textContent=" ";
+            time_last.textContent=" ";
+            ans.style.backgroundColor="white";
+            tmp=Math.floor(Math.random()*100+1);
+            time=1;
+            alert(tmp);
+        }
+        // 設x=50 a<x<b 太高 user=b 太低 user=a
+    </script>
+    
+</body>
+</html>
